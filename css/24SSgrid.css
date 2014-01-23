@@ -1,0 +1,168 @@
+/*
+* @author    : @zessx
+* @licence   : MIT License (MIT)
+* @copyright : Copyright (c) 2014 Samuel Marchal
+* @source    : https://github.com/zessx/24SSgrid
+*/
+.row {
+  width: 970px;
+  margin: 0 auto; }
+
+.col {
+  width: 950px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left; }
+  .col.clear + .col {
+    clear: left; }
+  .col .col {
+    margin-bottom: 0; }
+    .col .col:first-child {
+      margin-left: 0; }
+      .col .col:first-child.offset-1 {
+        margin-left: 40px; }
+      .col .col:first-child.offset-2 {
+        margin-left: 80px; }
+      .col .col:first-child.offset-3 {
+        margin-left: 120px; }
+      .col .col:first-child.offset-4 {
+        margin-left: 160px; }
+      .col .col:first-child.offset-5 {
+        margin-left: 200px; }
+      .col .col:first-child.offset-6 {
+        margin-left: 240px; }
+      .col .col:first-child.offset-7 {
+        margin-left: 280px; }
+      .col .col:first-child.offset-8 {
+        margin-left: 320px; }
+      .col .col:first-child.offset-9 {
+        margin-left: 360px; }
+      .col .col:first-child.offset-10 {
+        margin-left: 400px; }
+      .col .col:first-child.offset-11 {
+        margin-left: 440px; }
+      .col .col:first-child.offset-12 {
+        margin-left: 480px; }
+      .col .col:first-child.offset-13 {
+        margin-left: 520px; }
+      .col .col:first-child.offset-14 {
+        margin-left: 560px; }
+      .col .col:first-child.offset-15 {
+        margin-left: 600px; }
+      .col .col:first-child.offset-16 {
+        margin-left: 640px; }
+      .col .col:first-child.offset-17 {
+        margin-left: 680px; }
+      .col .col:first-child.offset-18 {
+        margin-left: 720px; }
+      .col .col:first-child.offset-19 {
+        margin-left: 760px; }
+      .col .col:first-child.offset-20 {
+        margin-left: 800px; }
+      .col .col:first-child.offset-21 {
+        margin-left: 840px; }
+      .col .col:first-child.offset-22 {
+        margin-left: 880px; }
+      .col .col:first-child.offset-23 {
+        margin-left: 920px; }
+      .col .col:first-child.offset-24 {
+        margin-left: 960px; }
+  .col.col-1 {
+    width: 30px; }
+  .col.offset-1 {
+    margin-left: 50px; }
+  .col.col-2 {
+    width: 70px; }
+  .col.offset-2 {
+    margin-left: 90px; }
+  .col.col-3 {
+    width: 110px; }
+  .col.offset-3 {
+    margin-left: 130px; }
+  .col.col-4 {
+    width: 150px; }
+  .col.offset-4 {
+    margin-left: 170px; }
+  .col.col-5 {
+    width: 190px; }
+  .col.offset-5 {
+    margin-left: 210px; }
+  .col.col-6 {
+    width: 230px; }
+  .col.offset-6 {
+    margin-left: 250px; }
+  .col.col-7 {
+    width: 270px; }
+  .col.offset-7 {
+    margin-left: 290px; }
+  .col.col-8 {
+    width: 310px; }
+  .col.offset-8 {
+    margin-left: 330px; }
+  .col.col-9 {
+    width: 350px; }
+  .col.offset-9 {
+    margin-left: 370px; }
+  .col.col-10 {
+    width: 390px; }
+  .col.offset-10 {
+    margin-left: 410px; }
+  .col.col-11 {
+    width: 430px; }
+  .col.offset-11 {
+    margin-left: 450px; }
+  .col.col-12 {
+    width: 470px; }
+  .col.offset-12 {
+    margin-left: 490px; }
+  .col.col-13 {
+    width: 510px; }
+  .col.offset-13 {
+    margin-left: 530px; }
+  .col.col-14 {
+    width: 550px; }
+  .col.offset-14 {
+    margin-left: 570px; }
+  .col.col-15 {
+    width: 590px; }
+  .col.offset-15 {
+    margin-left: 610px; }
+  .col.col-16 {
+    width: 630px; }
+  .col.offset-16 {
+    margin-left: 650px; }
+  .col.col-17 {
+    width: 670px; }
+  .col.offset-17 {
+    margin-left: 690px; }
+  .col.col-18 {
+    width: 710px; }
+  .col.offset-18 {
+    margin-left: 730px; }
+  .col.col-19 {
+    width: 750px; }
+  .col.offset-19 {
+    margin-left: 770px; }
+  .col.col-20 {
+    width: 790px; }
+  .col.offset-20 {
+    margin-left: 810px; }
+  .col.col-21 {
+    width: 830px; }
+  .col.offset-21 {
+    margin-left: 850px; }
+  .col.col-22 {
+    width: 870px; }
+  .col.offset-22 {
+    margin-left: 890px; }
+  .col.col-23 {
+    width: 910px; }
+  .col.offset-23 {
+    margin-left: 930px; }
+  .col.col-24 {
+    width: 950px; }
+  .col.offset-24 {
+    margin-left: 970px; }
+
+.debug .col {
+  background: rgba(255, 0, 0, 0.2); }

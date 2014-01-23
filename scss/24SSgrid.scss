@@ -1,0 +1,55 @@
+/*
+* @author    : @zessx
+* @licence   : MIT License (MIT)
+* @copyright : Copyright (c) 2014 Samuel Marchal
+* @source    : https://github.com/zessx/24SSgrid
+*/
+
+/* --- Variables --- */
+$sg-column-width: 30px;
+$sg-gutter-width: 10px;
+
+/* --- Functions --- */
+@function sg-width($n) {
+	@return $n * $sg-column-width + ($n - 1) * $sg-gutter-width;
+}
+
+/* --- Style --- */
+.row {
+	width: sg-width(24) + 2 * $sg-gutter-width;
+	margin: 0 auto;
+}
+.col {
+	width: sg-width(24);
+	margin-left: $sg-gutter-width;
+	margin-bottom: $sg-gutter-width;
+	float: left;
+
+    &.clear + .col {
+        clear: left;
+    }
+	.col {
+        margin-bottom: 0;
+
+        &:first-child {
+            margin-left: 0;
+
+            @for $i from 1 through 24 {
+                &.offset-#{$i} {
+                    margin-left: sg-width($i) + $sg-gutter-width;
+                }
+            }
+        }
+	}
+	@for $i from 1 through 24 {
+		&.col-#{$i} {
+			width: sg-width($i);
+		}
+		&.offset-#{$i} {
+			margin-left: sg-width($i) + 2 * $sg-gutter-width;
+		}
+	}
+}
+.debug .col {
+	background: rgba(255, 0, 0, 0.2);
+}

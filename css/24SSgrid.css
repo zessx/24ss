@@ -17,55 +17,55 @@
     clear: left; }
   .col .col {
     margin-bottom: 0; }
-    .col .col:first-child {
+    .col .col:first-child, .col .col.clear + .col {
       margin-left: 0; }
-      .col .col:first-child.offset-1 {
+      .col .col:first-child.offset-1, .col .col.clear + .col.offset-1 {
         margin-left: 40px; }
-      .col .col:first-child.offset-2 {
+      .col .col:first-child.offset-2, .col .col.clear + .col.offset-2 {
         margin-left: 80px; }
-      .col .col:first-child.offset-3 {
+      .col .col:first-child.offset-3, .col .col.clear + .col.offset-3 {
         margin-left: 120px; }
-      .col .col:first-child.offset-4 {
+      .col .col:first-child.offset-4, .col .col.clear + .col.offset-4 {
         margin-left: 160px; }
-      .col .col:first-child.offset-5 {
+      .col .col:first-child.offset-5, .col .col.clear + .col.offset-5 {
         margin-left: 200px; }
-      .col .col:first-child.offset-6 {
+      .col .col:first-child.offset-6, .col .col.clear + .col.offset-6 {
         margin-left: 240px; }
-      .col .col:first-child.offset-7 {
+      .col .col:first-child.offset-7, .col .col.clear + .col.offset-7 {
         margin-left: 280px; }
-      .col .col:first-child.offset-8 {
+      .col .col:first-child.offset-8, .col .col.clear + .col.offset-8 {
         margin-left: 320px; }
-      .col .col:first-child.offset-9 {
+      .col .col:first-child.offset-9, .col .col.clear + .col.offset-9 {
         margin-left: 360px; }
-      .col .col:first-child.offset-10 {
+      .col .col:first-child.offset-10, .col .col.clear + .col.offset-10 {
         margin-left: 400px; }
-      .col .col:first-child.offset-11 {
+      .col .col:first-child.offset-11, .col .col.clear + .col.offset-11 {
         margin-left: 440px; }
-      .col .col:first-child.offset-12 {
+      .col .col:first-child.offset-12, .col .col.clear + .col.offset-12 {
         margin-left: 480px; }
-      .col .col:first-child.offset-13 {
+      .col .col:first-child.offset-13, .col .col.clear + .col.offset-13 {
         margin-left: 520px; }
-      .col .col:first-child.offset-14 {
+      .col .col:first-child.offset-14, .col .col.clear + .col.offset-14 {
         margin-left: 560px; }
-      .col .col:first-child.offset-15 {
+      .col .col:first-child.offset-15, .col .col.clear + .col.offset-15 {
         margin-left: 600px; }
-      .col .col:first-child.offset-16 {
+      .col .col:first-child.offset-16, .col .col.clear + .col.offset-16 {
         margin-left: 640px; }
-      .col .col:first-child.offset-17 {
+      .col .col:first-child.offset-17, .col .col.clear + .col.offset-17 {
         margin-left: 680px; }
-      .col .col:first-child.offset-18 {
+      .col .col:first-child.offset-18, .col .col.clear + .col.offset-18 {
         margin-left: 720px; }
-      .col .col:first-child.offset-19 {
+      .col .col:first-child.offset-19, .col .col.clear + .col.offset-19 {
         margin-left: 760px; }
-      .col .col:first-child.offset-20 {
+      .col .col:first-child.offset-20, .col .col.clear + .col.offset-20 {
         margin-left: 800px; }
-      .col .col:first-child.offset-21 {
+      .col .col:first-child.offset-21, .col .col.clear + .col.offset-21 {
         margin-left: 840px; }
-      .col .col:first-child.offset-22 {
+      .col .col:first-child.offset-22, .col .col.clear + .col.offset-22 {
         margin-left: 880px; }
-      .col .col:first-child.offset-23 {
+      .col .col:first-child.offset-23, .col .col.clear + .col.offset-23 {
         margin-left: 920px; }
-      .col .col:first-child.offset-24 {
+      .col .col:first-child.offset-24, .col .col.clear + .col.offset-24 {
         margin-left: 960px; }
   .col.col-1 {
     width: 30px; }

@@ -10,7 +10,7 @@ Installation
 
 Customization
 -------------
-24SSgrid will still use 24 columns, but you are able to specify two variables, adding thos lines to your main SASS file :
+24SSgrid will still use 24 columns, but you are able to specify two variables, adding those lines to your main SASS file :
 
     $gw-column: 30px;
     $gw-gutter: 10px;

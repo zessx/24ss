@@ -32,3 +32,14 @@ Example :
             <div class="col col-6"></div>
         </div>
     </div>
+
+Legals
+------
+- Author : [zessx](https://github.com/zessx)
+- Licence : [MIT](http://opensource.org/licenses/MIT) 
+- Contact : [@zessx](https://twitter.com/zessx)
+- Link  : [http://smarchal.com/24SS/](http://smarchal.com/24SS/)
+
+TODO
+----
+- 

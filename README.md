@@ -20,6 +20,7 @@ Usage
 - Use the `.row` class on your wrapper
 - Use both `.col` and `.col-x` classes on your columns
 - Use `.offset-x` classes to manage empty columns
+- Use `.clear` class to force next column to be on a new line
 - You can use nested columns
 
 Example :
@@ -38,7 +39,7 @@ Legals
 - Author : [zessx](https://github.com/zessx)
 - Licence : [MIT](http://opensource.org/licenses/MIT) 
 - Contact : [@zessx](https://twitter.com/zessx)
-- Link  : [http://smarchal.com/24SS/](http://smarchal.com/24SS/)
+- Link  : [http://smarchal.com/24ss/](http://smarchal.com/24ss/)
 
 TODO
 ----

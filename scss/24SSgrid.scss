@@ -28,7 +28,7 @@ $sg-gutter-width: 10px;
     ~ .col {
         margin-left: $sg-gutter-width;
     }
-	&.clear + .col {
+	&.break + .col {
 	    margin-left: 0;
 		clear: left;
 	}
@@ -40,7 +40,7 @@ $sg-gutter-width: 10px;
 			width: sg-width($i);
 		}
 		&.offset-#{$i},
-		&.clear + .offset-#{$i} {
+		&.break + .offset-#{$i} {
 			margin-left: sg-width($i) + $sg-gutter-width;
 		}
 		~ .offset-#{$i} {

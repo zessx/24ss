@@ -20,20 +20,20 @@ Usage
 - Use the `.row` class on your wrapper
 - Use both `.col` and `.col-x` classes on your columns
 - Use `.offset-x` classes to manage empty columns
-- Use `.clear` class to force next column to be on a new line
+- Use `.break` class to force next column to be on a new line
 - You can use nested columns
 
 Example :
 
     <div class="row">
         <div class="col col-4"></div>
-        <div class="col col-18 offset-2 clear">
+        <div class="col col-18 offset-2 break">
             <div class="col col-6"></div>
             <p class="col col-6"></p>
             <span class="col col-6"></span>
         </div>
         <div class="col col-12"></div>
-        <div class="col col-12 clear"></div>
+        <div class="col col-12 break"></div>
     </div>
 
 Legals

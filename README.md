@@ -27,11 +27,13 @@ Example :
 
     <div class="row">
         <div class="col col-4"></div>
-        <div class="col col-18 offset-2">
+        <div class="col col-18 offset-2 clear">
             <div class="col col-6"></div>
-            <div class="col col-6"></div>
-            <div class="col col-6"></div>
+            <p class="col col-6"></p>
+            <span class="col col-6"></span>
         </div>
+        <div class="col col-12"></div>
+        <div class="col col-12 clear"></div>
     </div>
 
 Legals

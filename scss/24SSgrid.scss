@@ -16,37 +16,34 @@ $sg-gutter-width: 10px;
 
 /* --- Style --- */
 .row {
-	width: sg-width(24) + 2 * $sg-gutter-width;
+	width: sg-width(24);
 	margin: 0 auto;
 }
 .col {
 	width: sg-width(24);
-	margin-left: $sg-gutter-width;
+	margin-left: 0;
 	margin-bottom: $sg-gutter-width;
 	float: left;
 
+    ~ .col {
+        margin-left: $sg-gutter-width;
+    }
 	&.clear + .col {
+	    margin-left: 0;
 		clear: left;
 	}
 	.col {
 		margin-bottom: 0;
-
-		&:first-of-type,
-		&.clear + .col {
-			margin-left: 0;
-
-			@for $i from 1 through 24 {
-				&.offset-#{$i} {
-					margin-left: sg-width($i) + $sg-gutter-width;
-				}
-			}
-		}
 	}
 	@for $i from 1 through 24 {
 		&.col-#{$i} {
 			width: sg-width($i);
 		}
-		&.offset-#{$i} {
+		&.offset-#{$i},
+		&.clear + .offset-#{$i} {
+			margin-left: sg-width($i) + $sg-gutter-width;
+		}
+		~ .offset-#{$i} {
 			margin-left: sg-width($i) + 2 * $sg-gutter-width;
 		}
 	}

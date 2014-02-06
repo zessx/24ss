@@ -6,6 +6,7 @@
 */
 
 $sg-nb-column:    24;
+$sg-class-prefix: '';
 $sg-column-width: 30px;
 $sg-gutter-width: 10px;
 $sg-margin-width: 5px;
@@ -14,40 +15,40 @@ $sg-margin-width: 5px;
 	@return $n * $sg-column-width + ($n - 1) * $sg-gutter-width;
 }
 
-.row {
+.#{$sg-class-prefix}row {
 	width: sg-width($sg-nb-column);
 	margin: 0 auto;
 	padding: 0 $sg-margin-width;
 }
-.col {
+.#{$sg-class-prefix}col {
 	width: sg-width($sg-nb-column);
 	margin-left: 0;
 	margin-bottom: $sg-gutter-width;
 	float: left;
 
-    ~ .col {
+    ~ .#{$sg-class-prefix}col {
         margin-left: $sg-gutter-width;
     }
-	&.break + .col {
+	&.#{$sg-class-prefix}break + .#{$sg-class-prefix}col {
 	    margin-left: 0;
 		clear: left;
 	}
-	.col {
+	.#{$sg-class-prefix}col {
 		margin-bottom: 0;
 	}
 	@for $i from 1 through $sg-nb-column {
-		&.col-#{$i} {
+		&.#{$sg-class-prefix}col-#{$i} {
 			width: sg-width($i);
 		}
-		&.offset-#{$i},
-		&.break + .offset-#{$i} {
+		&.#{$sg-class-prefix}offset-#{$i},
+		&.#{$sg-class-prefix}break + .#{$sg-class-prefix}offset-#{$i} {
 			margin-left: sg-width($i) + $sg-gutter-width;
 		}
-		~ .offset-#{$i} {
+		~ .#{$sg-class-prefix}offset-#{$i} {
 			margin-left: sg-width($i) + 2 * $sg-gutter-width;
 		}
 	}
 }
-.debug .col {
+.#{$sg-class-prefix}debug .#{$sg-class-prefix}col {
 	background: rgba(255, 0, 0, 0.2);
 }

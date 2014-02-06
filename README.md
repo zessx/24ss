@@ -13,6 +13,7 @@ Customization
 You are able to specify a few variables to custom your grid, adding those lines to your main SASS file :
 
     $sg-nb-column:    24;   // columns number
+    $sg-class-prefix: '';   // class prefix
     $sg-column-width: 30px; // columns width
     $sg-gutter-width: 10px; // space between columns
     $sg-margin-width: 5px;  // space around rows

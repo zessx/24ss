@@ -10,10 +10,11 @@ Installation
 
 Customization
 -------------
-24SSgrid will still use 24 columns, but you are able to specify two variables, adding those lines to your main SASS file :
+24SSgrid will still use 24 columns, but you are able to specify three variables, adding those lines to your main SASS file :
 
-    $sg-column-width: 30px;
-    $sg-gutter-width: 10px;
+    $sg-column-width: 30px; // column width
+    $sg-gutter-width: 10px; // space between columns
+    $sg-margin-width: 5px;  // space around rows
 
 Usage
 -----
@@ -46,4 +47,5 @@ Legals
 TODO
 ----
 - Add fluid grid
+- Add column amount var
 - Find a way to avoid `.break` usage

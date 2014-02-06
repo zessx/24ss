@@ -6,7 +6,8 @@
 */
 .row {
   width: 950px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 5px; }
 
 .col {
   width: 950px;

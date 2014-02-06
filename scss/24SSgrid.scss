@@ -5,19 +5,18 @@
 * @source    : https://github.com/zessx/24SSgrid
 */
 
-/* --- Variables --- */
 $sg-column-width: 30px;
 $sg-gutter-width: 10px;
+$sg-margin-width: 5px;
 
-/* --- Functions --- */
 @function sg-width($n) {
 	@return $n * $sg-column-width + ($n - 1) * $sg-gutter-width;
 }
 
-/* --- Style --- */
 .row {
 	width: sg-width(24);
 	margin: 0 auto;
+	padding: 0 $sg-margin-width;
 }
 .col {
 	width: sg-width(24);

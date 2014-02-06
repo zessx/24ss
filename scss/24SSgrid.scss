@@ -5,6 +5,7 @@
 * @source    : https://github.com/zessx/24SSgrid
 */
 
+$sg-nb-column:    24;
 $sg-column-width: 30px;
 $sg-gutter-width: 10px;
 $sg-margin-width: 5px;
@@ -14,12 +15,12 @@ $sg-margin-width: 5px;
 }
 
 .row {
-	width: sg-width(24);
+	width: sg-width($sg-nb-column);
 	margin: 0 auto;
 	padding: 0 $sg-margin-width;
 }
 .col {
-	width: sg-width(24);
+	width: sg-width($sg-nb-column);
 	margin-left: 0;
 	margin-bottom: $sg-gutter-width;
 	float: left;
@@ -34,7 +35,7 @@ $sg-margin-width: 5px;
 	.col {
 		margin-bottom: 0;
 	}
-	@for $i from 1 through 24 {
+	@for $i from 1 through $sg-nb-column {
 		&.col-#{$i} {
 			width: sg-width($i);
 		}

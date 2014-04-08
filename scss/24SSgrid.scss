@@ -50,7 +50,8 @@ $sg-background-debug: rgba(255, 0, 0, 0.2);
 		}
 	}
 }
-.#{$sg-class-prefix}debug .#{$sg-class-prefix}col {
+.#{$sg-class-prefix}debug .#{$sg-class-prefix}col,
+.#{$sg-class-prefix}col.#{$sg-class-prefix}debug {
 	position: relative;
 
 	&:before {

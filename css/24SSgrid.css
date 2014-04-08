@@ -166,9 +166,11 @@
   .col ~ .offset-24 {
     margin-left: 970px; }
 
-.debug .col {
+.debug .col,
+.col.debug {
   position: relative; }
-  .debug .col:before {
+  .debug .col:before,
+  .col.debug:before {
     content: ' ';
     position: absolute;
     top: 0;

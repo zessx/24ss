@@ -63,3 +63,8 @@ $sg-background-debug: rgba(255, 0, 0, 0.2);
 		background-color: $sg-background-debug;
 	}
 }
+.#{$sg-class-prefix}debug.#{$sg-class-prefix}no-debug .#{$sg-class-prefix}col:before,
+.#{$sg-class-prefix}debug .#{$sg-class-prefix}col.#{$sg-class-prefix}no-debug:before,
+.#{$sg-class-prefix}debug .#{$sg-class-prefix}no-debug .#{$sg-class-prefix}col:before {
+	display: none;
+}

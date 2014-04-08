@@ -40,6 +40,31 @@ Example :
         <div class="col col-12 break"></div>
     </div>
 
+Debug
+-----
+You can use the `.debug` class to quickly highlight your grid blocks.   
+This class can be used either on an element or on a parent :
+
+    <div class="row">
+        <div class="col col-8 debug"></div>
+        <div class="col col-8"></div>
+        <div class="col col-8"></div>
+    </div>
+    <div class="row debug">
+        <div class="col col-8"></div>
+        <div class="col col-8"></div>
+        <div class="col col-8"></div>
+    </div>
+
+For any reason, you may want to disable the debug mode on a specific element.  
+This can be done using the `.no-debug` class :
+
+    <div class="row debug">
+        <div class="col col-8 no-debug"></div>
+        <div class="col col-8"></div>
+        <div class="col col-8"></div>
+    </div>
+
 Legals
 ------
 - Author : [zessx](https://github.com/zessx)

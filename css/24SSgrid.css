@@ -176,3 +176,8 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 0, 0, 0.2); }
+
+.debug.no-debug .col:before,
+.debug .col.no-debug:before,
+.debug .no-debug .col:before {
+  display: none; }

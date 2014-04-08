@@ -5,11 +5,12 @@
 * @source    : https://github.com/zessx/24SSgrid
 */
 
-$sg-nb-column:    24;
-$sg-class-prefix: '';
-$sg-column-width: 30px;
-$sg-gutter-width: 10px;
-$sg-margin-width: 5px;
+$sg-nb-column:        24;
+$sg-class-prefix:     '';
+$sg-column-width:     30px;
+$sg-gutter-width:     10px;
+$sg-margin-width:     5px;
+$sg-background-debug: rgba(255, 0, 0, 0.2);
 
 @function sg-width($n) {
 	@return $n * $sg-column-width + ($n - 1) * $sg-gutter-width;
@@ -50,5 +51,15 @@ $sg-margin-width: 5px;
 	}
 }
 .#{$sg-class-prefix}debug .#{$sg-class-prefix}col {
-	background-color: rgba(255, 0, 0, 0.2);
+	position: relative;
+
+	&:before {
+		content: ' ';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $sg-background-debug;
+	}
 }

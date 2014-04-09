@@ -5,6 +5,7 @@
 * @source    : https://github.com/zessx/24SSgrid
 */
 
+/* Variables */
 $sg-nb-column:        24;
 $sg-class-prefix:     '';
 $sg-column-width:     30px;
@@ -12,10 +13,12 @@ $sg-gutter-width:     10px;
 $sg-margin-width:     5px;
 $sg-background-debug: rgba(255, 0, 0, 0.2);
 
+/* Calculate block width */
 @function sg-width($n) {
 	@return $n * $sg-column-width + ($n - 1) * $sg-gutter-width;
 }
 
+/* Classes */
 .#{$sg-class-prefix}row {
 	width: sg-width($sg-nb-column);
 	margin: 0 auto;
@@ -50,6 +53,8 @@ $sg-background-debug: rgba(255, 0, 0, 0.2);
 		}
 	}
 }
+
+/* Debug mode */
 .#{$sg-class-prefix}debug .#{$sg-class-prefix}col,
 .#{$sg-class-prefix}col.#{$sg-class-prefix}debug {
 	position: relative;
@@ -68,4 +73,28 @@ $sg-background-debug: rgba(255, 0, 0, 0.2);
 .#{$sg-class-prefix}debug .#{$sg-class-prefix}col.#{$sg-class-prefix}no-debug:before,
 .#{$sg-class-prefix}debug .#{$sg-class-prefix}no-debug .#{$sg-class-prefix}col:before {
 	display: none;
+}
+
+/* Placeholders */
+%#{$sg-class-prefix}row {
+	@extend .#{$sg-class-prefix}row;
+}
+%#{$sg-class-prefix}break {
+	@extend .#{$sg-class-prefix}break;
+}
+%#{$sg-class-prefix}debug {
+	@extend .#{$sg-class-prefix}debug;
+}
+%#{$sg-class-prefix}no-debug {
+	@extend .#{$sg-class-prefix}no-debug;
+}
+@for $i from 1 through $sg-nb-column {
+	%#{$sg-class-prefix}col-#{$i} {
+		@extend .#{$sg-class-prefix}col;
+		@extend .#{$sg-class-prefix}col-#{$i};
+	}
+	%#{$sg-class-prefix}offset-#{$i} {
+		@extend .#{$sg-class-prefix}col;
+		@extend .#{$sg-class-prefix}offset-#{$i};
+	}
 }

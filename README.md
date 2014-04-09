@@ -4,7 +4,7 @@
 
 Installation
 ------------
-1. Download the [latest release](https://github.com/zessx/24SSgrid/releases) of 24SS
+1. Download the [latest release](https://github.com/zessx/24SSgrid/releases) of 24SSgrid
 2. Copy the `scss/24SSgrid.scss` file in your project
 3. Add this line to your main SASS file : `@import "24SSgrid";`
 
@@ -19,8 +19,8 @@ You are able to specify a few variables to custom your grid, adding those lines 
     $sg-margin-width:     5px;                  // space around rows
     $sg-background-debug: rgba(255, 0, 0, 0.2); // color used to highlight block in debug mode
 
-Usage
------
+HTML usage
+----------
 - Use the `.row` class on your wrapper
 - Use both `.col` and `.col-x` classes on your columns
 - Use `.offset-x` classes to manage empty columns
@@ -39,6 +39,27 @@ Example :
         <div class="col col-12"></div>
         <div class="col col-12 break"></div>
     </div>
+
+SASS usage
+----------
+24SSgrid provides placeholders for a better SASS use : 
+- `%row`
+- `%col-x`
+- `%offset-x`
+- `%break`
+
+Example :
+
+    section {
+        @extend %row;
+    }
+    article {
+        @extend %col-18;
+    }
+    aside {
+        @extend %col-6;
+        @extend %break;
+    }
 
 Debug
 -----

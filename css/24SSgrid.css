@@ -4,6 +4,9 @@
 * @copyright : Copyright (c) 2014 Samuel Marchal
 * @source    : https://github.com/zessx/24SSgrid
 */
+/* Variables */
+/* Calculate block width */
+/* Classes */
 .row {
   width: 950px;
   margin: 0 auto;
@@ -166,6 +169,7 @@
   .col ~ .offset-24 {
     margin-left: 970px; }
 
+/* Debug mode */
 .debug .col,
 .col.debug {
   position: relative; }
@@ -183,3 +187,5 @@
 .debug .col.no-debug:before,
 .debug .no-debug .col:before {
   display: none; }
+
+/* Placeholders */

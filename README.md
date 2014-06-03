@@ -70,12 +70,12 @@ Legals
 - Author : [zessx](https://github.com/zessx)
 - Licence : [MIT](http://opensource.org/licenses/MIT) 
 - Contact : [@zessx](https://twitter.com/zessx)
-- Link  : [http://smarchal.com/24ss/](http://smarchal.com/24ss/)
+- Link  : [http://24ss.smarchal.com](http://24ss.smarchal.com)
 
 Donations
 ---------
 
-[![Buy me a coffee !](http://smarchal.com/bmac)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KTYWBM9HJMMSE&lc=FR&item_name=Buy%20a%20coffee%20to%20zessx%20%28Samuel%20Marchal%29&currency_code=EUR&bn=PP%2dDonationsBF%3abmac%3aNonHosted)
+[![Buy me a coffee !](http://doc.smarchal.com/bmac)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KTYWBM9HJMMSE&lc=FR&item_name=Buy%20a%20coffee%20to%20zessx%20%28Samuel%20Marchal%29&currency_code=EUR&bn=PP%2dDonationsBF%3abmac%3aNonHosted)
 				
 TODO
 ----

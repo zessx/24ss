@@ -4,7 +4,7 @@
 
 Installation
 ------------
-1. Download the [latest release](https://github.com/zessx/24SSgrid/releases) of 24SS
+1. Download the [latest release](https://github.com/zessx/24ss/releases) of 24SS
 2. Copy the `scss/24SSgrid.scss` file in your project
 3. Add this line to your main SASS file : `@import "24SSgrid";`
 

@@ -1,4 +1,4 @@
 24SS
 ====
 
-[http://24ss.smarchal.com](http://24ss.smarchal.com)
+[http://work.smarchal.com/24ss](http://work.smarchal.com/24ss)
